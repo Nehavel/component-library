@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'component-library';
+  activeTab: any;
+  selectedTab(tab: any){
+    this.activeTab = tab;
+  }
 }

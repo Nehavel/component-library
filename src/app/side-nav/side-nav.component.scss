@@ -1,0 +1,23 @@
+.content{
+    padding: 10px 5px 10px 5px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid  rgb(173, 169, 169);
+    
+}
+.content:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(45, 7, 134);
+}
+.active{
+    border-bottom: 2px solid rgb(45, 7, 134);
+}
+.nav-bar{
+    width: 200px;
+    height: 500px;
+    padding: 5px;
+    font-weight: 500;
+    color: rgb(45, 7, 134);
+    background-color: rgb(219, 214, 214);
+    align-items: start !important;
+}

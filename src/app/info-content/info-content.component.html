@@ -1,0 +1,70 @@
+<div *ngIf="activeTab === 'Search Autocomplete'">
+<h2>Search autocomplete feature with debounce in Angular</h2>
+<h4> HTML Template</h4>
+<p>Create the HTML structure for the autocomplete input field and the results list:</p>
+<div class="code">
+  {{search.p1}}
+</div>
+<h4>
+    Reactive Form
+</h4>
+<p>
+    Set up a Reactive Form with a FormControl for the search input.
+</p>
+<div class="code">
+    {{search.p2}}
+</div>
+<p>
+    This code sets up a basic search autocomplete feature with debouncing using Angular Reactive Forms and RxJS. When the user types in the input field, the search function is called with the debounced search term, and the results are displayed in a list below the input field. You should adapt the search function to fetch real data based on your application's requirements.
+</p>
+</div>
+<div *ngIf="activeTab !== 'Search Autocomplete'">
+<h2>
+    File upload and download functionality
+</h2>
+<h3>File Upload</h3>
+<h4>
+    HTML Content
+</h4>
+<h5>
+    Create an HTML form for file upload
+</h5>
+<div class="code">
+{{dwn?.p1}}
+</div>
+<h5>
+    handle the file upload logic
+</h5>
+<div class="code">
+    {{dwn?.p2}}
+    </div>
+    <h5>
+       Service
+    </h5>
+    <div class="code">
+        {{dwn?.p3}}
+        </div>
+        <div>
+            Ensure that your Angular app is properly configured to send HTTP POST requests to your server for file upload. This may involve CORS configuration and other server-specific settings.
+        </div>
+    <h3>
+        File Download
+    </h3>
+    <h4>
+        create a method to download files
+    </h4>
+    <div class="code">
+        {{dwn?.p4}}
+        </div>
+    <h4>
+        Component logic
+    </h4>
+    <div class="code">
+        {{dwn?.p5}}
+        </div>
+        <div>
+            In this example, the FileDownloadService sends an HTTP GET request to your server's download endpoint to fetch the file. When the response is received, it creates a Blob and initiates the download using an anchor element with the download attribute.
+                Make sure to replace the URLs and file types with your actual server and file details. Additionally, configure your server to serve downloadable files from the specified endpoint.
+        </div>
+    
+</div>

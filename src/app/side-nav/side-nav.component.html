@@ -1,0 +1,7 @@
+<div class="nav-bar">
+    <ng-container *ngFor="let tab of tabs">
+    <div class="content" (click)="selectedTab(tab)" [ngClass]="tab === activeTab ? 'active' : ''">
+            {{tab}}
+        </div>
+    </ng-container>
+    </div>
